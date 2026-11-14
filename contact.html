@@ -83,7 +83,7 @@
                 <p><i class="bi bi-geo-alt-fill"></i>18 Commission Civil Street,<br>Barangay Marcelo H. del Pilar,<br>Iloilo City</p>
                 <p><i class="bi bi-envelope-fill"></i>cakesbybenz@gmail.com</p>
 
-                <!-- Opening Hours and Map -->
+                <!-- Opening Hours and Real Google Maps Directions Link -->
                 <aside class="contact-side">
                     <section class="hours-box">
                         <h2><i class="bi bi-clock"></i> OPENING HOURS</h2>
@@ -92,14 +92,12 @@
                         <p><span>Sunday</span><strong>2:00 PM - 12:00 AM</strong></p>
                     </section>
 
-                    <section class="map-box" aria-label="Cafe Nahum location map">
-                        <div class="map-lines"></div>
-                        <i class="bi bi-geo-alt-fill map-pin"></i>
-                        <p>Iloilo<br>City</p>
+                    <section class="map-link-box" aria-label="Cafe Nahum location map directions">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=18+Commission+Civil+St,+Iloilo+City" target="_blank" rel="noopener noreferrer" class="map-directions-btn">
+                            <i class="bi bi-map-fill"></i> Get Directions on Google Maps
+                        </a>
                     </section>
                 </aside>
-
-                
 
                 <h2 class="follow-title">FOLLOW US</h2>
                 <div class="social-links">
@@ -107,8 +105,6 @@
                     <a href="https://www.facebook.com/cafenahumans" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
                     <a href="https://www.tiktok.com/@cafe.nahum?is_from_webapp=1&amp;sender_device=pc" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
                 </div>
-
-                
             </div>
 
             <!-- Contact Form Section -->
@@ -116,39 +112,36 @@
                 <div>
                     <h2 id="form-title">SEND A MESSAGE</h2>
                     <p>Tell us how we can make your café visit better.</p>
+                    <p class="demo-note"><em>Demonstration only. This form does not send messages.</em></p>
                 </div>
 
-                <form class="contact-form" action="#" method="post" enctype="multipart/form-data">
+                <!-- Form Success/Error Banner -->
+                <div id="form-message" class="form-message" style="display: none;" aria-live="polite"></div>
+
+                <form class="contact-form" id="contactForm" novalidate>
                     <div class="form-row">
                         <div class="form-field">
-                            <label for="first-name">First Name</label>
-                            <input type="text" id="first-name" name="first-name" required>
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name" name="first-name">
+                            <span class="error-msg" id="first-name-error"></span>
                         </div>
                         <div class="form-field">
-                            <label for="last-name">Last Name</label>
-                            <input type="text" id="last-name" name="last-name" required>
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" name="last-name">
+                            <span class="error-msg" id="last-name-error"></span>
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-field">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email">
+                            <span class="error-msg" id="email-error"></span>
                         </div>
                         <div class="form-field">
                             <label for="phone">Phone</label>
                             <input type="tel" id="phone" name="phone">
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-field">
-                            <label for="password">Password (demo)</label>
-                            <input type="password" id="password" name="password">
-                        </div>
-                        <div class="form-field">
-                            <label for="age">Age</label>
-                            <input type="number" id="age" name="age" min="1" max="120">
+                            <span class="error-msg" id="phone-error"></span>
                         </div>
                     </div>
 
@@ -156,50 +149,30 @@
                         <div class="form-field">
                             <label for="visit-date">Preferred Date</label>
                             <input type="date" id="visit-date" name="visit-date">
+                            <span class="error-msg" id="visit-date-error"></span>
                         </div>
                         <div class="form-field">
-                            <label for="visit-time">Preferred Time</label>
-                            <input type="time" id="visit-time" name="visit-time">
+                            <label for="inquiry-type">Inquiry Type *</label>
+                            <select id="inquiry-type" name="inquiry-type">
+                                <option value="">Select inquiry type</option>
+                                <option value="general">General question</option>
+                                <option value="reservation">Reservation</option>
+                                <option value="event">Private event</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                            <span class="error-msg" id="inquiry-type-error"></span>
                         </div>
                     </div>
 
-                    <fieldset>
-                        <legend>How did you hear about us?</legend>
-                        <label><input type="radio" name="source" value="foodpanda"> Foodpanda</label>
-                        <label><input type="radio" name="source" value="friend"> Friend</label>
-                        <label><input type="radio" name="source" value="social-media"> Social media</label>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>What are you interested in?</legend>
-                        <label><input type="checkbox" name="topic" value="coffee"> Coffee</label>
-                        <label><input type="checkbox" name="topic" value="matcha"> Matcha</label>
-                        <label><input type="checkbox" name="topic" value="sandwiches"> Sandwiches</label>
-                    </fieldset>
-
                     <div class="form-full">
-                        <label for="inquiry-type">Inquiry Type</label>
-                        <select id="inquiry-type" name="inquiry-type">
-                            <option value="general">General question</option>
-                            <option value="reservation">Reservation</option>
-                            <option value="event">Private event</option>
-                            <option value="feedback">Feedback</option>
-                        </select>
-                    </div>
-
-                    <div class="form-full">
-                        <label for="message">Message</label>
+                        <label for="message">Message *</label>
                         <textarea id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
-                    </div>
-
-                    <div class="form-full">
-                        <label for="attachment">Upload a File</label>
-                        <input type="file" id="attachment" name="attachment">
+                        <span class="error-msg" id="message-error"></span>
                     </div>
 
                     <div class="form-buttons">
                         <button type="submit">SUBMIT</button>
-                        <button type="reset">RESET</button>
+                        <button type="reset" id="resetBtn">RESET</button>
                     </div>
                 </form>
             </section>
@@ -226,6 +199,8 @@
         </div>
     </footer>
 
+    <!-- External JavaScript Validation Script -->
+    <script src="js/contact.js" defer></script>
 </body>
 
 </html>
