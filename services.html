@@ -71,96 +71,142 @@
         <img class="services-decor services-decor-left" src="images/Background-design (1).png" alt="" aria-hidden="true">
         <img class="services-decor services-decor-right" src="images/Background-design (2).png" alt="" aria-hidden="true">
 
+        <!-- Menu Intro Section -->
         <section class="menu-intro">
             <p class="menu-label">OUR MENU</p>
             <h1>GOOD DRINKS,<br>GREAT MOMENTS.</h1>
             <p class="menu-description">Freshly made drinks for slow mornings, study breaks, and everything in between.</p>
         </section>
-        
-        <!-- Menu Layout Section -->
-        <section class="menu-layout" aria-label="Cafe Nahum menu">
-            <div class="menu-column">
-                <section class="menu-section">
-                    <h2><i class="bi bi-cup-hot"></i> Nahum House Blends</h2>
-                    <div class="menu-heading"><span></span><span>16oz</span><span>22oz</span></div>
-                    <ul class="menu-list">
-                        <li><span>Nahum Latte</span><b>155.00</b><b>138.00</b></li>
-                        <li><span>Biscoff</span><b>159.00</b><b>139.00</b></li>
-                        <li><span>Nutella</span><b>159.00</b><b>139.00</b></li>
-                        <li><span>Coco Latte</span><b>139.00</b><b>129.00</b></li>
-                        <li><span>Pumpkin Spice</span><b>139.00</b><b>129.00</b></li>
-                        <li><span>Soda Espresso</span><b>139.00</b><b>129.00</b></li>
-                        <li><span>White Mocha</span><b>139.00</b><b>129.00</b></li>
-                        <li><span>Dark Mocha</span><b>139.00</b><b>129.00</b></li>
-                    </ul>
-                    <img class="menu-photo house-photo" src="images/drink (3).jpg" alt="Biscoff and chocolate iced drinks">
-                </section>
 
-                <section class="menu-section">
-                    <h2><i class="bi bi-leaf"></i> Matcha Series</h2>
-                    <div class="menu-heading"><span></span><span>16oz</span><span>22oz</span></div>
-                    <ul class="menu-list">
-                        <li><span>Matcha Latte</span><b>129.00</b><b>119.00</b></li>
-                        <li><span>Coco Matcha</span><b>149.00</b><b>129.00</b></li>
-                        <li><span>Strawberry Matcha</span><b>149.00</b><b>129.00</b></li>
-                        <li><span>Caramel Matcha</span><b>149.00</b><b>119.00</b></li>
-                        <li><span>Biscoff Matcha</span><b>169.00</b><b>149.00</b></li>
-                        <li><span>Dirty Matcha</span><b>169.00</b><b>149.00</b></li>
-                        <li><span>Soda Matcha</span><b>139.00</b><b>129.00</b></li>
-                    </ul>
-                    <img class="menu-photo matcha-photo" src="images/drink (2).jpg" alt="Iced matcha latte">
-                </section>
-
-                <section class="menu-section">
-                    <h2><i class="bi bi-brightness-high"></i> Fruit Tea Series</h2>
-                    <div class="menu-heading"><span></span><span>16oz</span><span>22oz</span></div>
-                    <ul class="menu-list">
-                        <li><span>Lychee</span><b>109.00</b><b>129.00</b></li>
-                        <li><span>Passionfruit</span><b>109.00</b><b>129.00</b></li>
-                        <li><span>Strawberry</span><b>109.00</b><b>129.00</b></li>
-                        <li><span>Monta Cubano</span><b>109.00</b><b>129.00</b></li>
-                        <li><span>Lemon Blue Ocean</span><b>119.00</b><b>139.00</b></li>
-                        <li><span>Peppermint</span><b>109.00</b><b>129.00</b></li>
-                    </ul>
-                    <img class="menu-photo tea-photo" src="images/drink (4).jpg" alt="Lemon blue ocean iced tea">
-                </section>
+        <!-- Category Filter Buttons (controlled by js/menu.js) -->
+        <section class="menu-toolbar" aria-label="Menu filters">
+            <div class="menu-filters" role="group" aria-label="Filter drinks by category">
+                <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                <button type="button" class="filter-btn" data-filter="coffee" aria-pressed="false"><i class="bi bi-cup-hot" aria-hidden="true"></i> Coffee</button>
+                <button type="button" class="filter-btn" data-filter="matcha" aria-pressed="false"><i class="bi bi-leaf" aria-hidden="true"></i> Matcha</button>
+                <button type="button" class="filter-btn" data-filter="fruit-tea" aria-pressed="false"><i class="bi bi-brightness-high" aria-hidden="true"></i> Fruit Tea</button>
+                <button type="button" class="filter-btn" data-filter="milk" aria-pressed="false"><i class="bi bi-heart" aria-hidden="true"></i> Milk Drinks</button>
             </div>
-
-            <div class="menu-column">
-                <section class="menu-section">
-                    <h2><i class="bi bi-cup-straw"></i> Classic Coffee Blends</h2>
-                    <div class="menu-heading"><span></span><span>16oz</span><span>22oz</span></div>
-                    <ul class="menu-list">
-                        <li><span>Americano</span><b>89.00</b><b>99.00</b></li>
-                        <li><span>Spanish Latte</span><b>125.00</b><b>118.00</b></li>
-                        <li><span>Vietnamese Latte</span><b>125.00</b><b>118.00</b></li>
-                        <li><span>Caramel Macchiato</span><b>125.00</b><b>118.00</b></li>
-                        <li><span>Latte Macchiato</span><b>125.00</b><b>118.00</b></li>
-                        <li><span>Salted Caramel</span><b>125.00</b><b>118.00</b></li>
-                        <li><span>Iced Latte</span><b>119.00</b><b>99.00</b></li>
-                    </ul>
-                    <img class="menu-photo coffee-photo" src="images/drink (5).jpg" alt="Iced coffee in a jar">
-                </section>
-
-                <section class="menu-section milk-section">
-                    <h2><i class="bi bi-heart"></i> Milk Drinks</h2>
-                    <div class="menu-heading"><span></span><span>16oz</span><span>22oz</span></div>
-                    <ul class="menu-list">
-                        <li><span>Strawberry</span><b>119.00</b><b>129.00</b></li>
-                        <li><span>Biscoff</span><b>119.00</b><b>129.00</b></li>
-                        <li><span>Nutella</span><b>119.00</b><b>129.00</b></li>
-                        <li><span>Dark Chocolate</span><b>109.00</b><b>109.00</b></li>
-                        <li><span>White Chocolate</span><b>109.00</b><b>99.00</b></li>
-                    </ul>
-                    <img class="menu-photo milk-photo" src="images/drink (1).jpg" alt="Strawberry milk drink">
-                </section>
-            </div>
+            <p class="menu-status" id="menu-status" aria-live="polite">Showing all drinks.</p>
         </section>
 
-        <section class="menu-extras">
-            <div><h3><i class="bi bi-droplet"></i> Milk Substitutes</h3><p>Almond milk <b>+15.00</b></p><p>Oat milk <b>+20.00</b></p></div>
-            <div><h3><i class="bi bi-plus-circle"></i> Add-ons</h3><p>Biscoff biscuit <b>25.00</b></p><p>Ginger <b>20.00</b></p></div>
-            <div><h3>More choices</h3><p>Extra shot <b>15.00</b></p><p>Takeout box <b>25.00</b></p></div>
+        <!-- Menu Cards Section -->
+        <section class="menu-grid" aria-label="Cafe Nahum menu">
+            <article class="menu-card" data-category="coffee" aria-labelledby="house-title">
+                <h2 id="house-title"><i class="bi bi-cup-hot" aria-hidden="true"></i> Nahum House Blends</h2>
+                <img class="menu-photo" src="images/drink (3).jpg" alt="Biscoff and chocolate iced drinks">
+                <table class="menu-table">
+                    <caption class="menu-sr-only">Nahum House Blends prices in Philippine pesos</caption>
+                    <thead>
+                        <tr><th scope="col">Drink</th><th scope="col">16oz</th><th scope="col">22oz</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">Nahum Latte</th><td>138.00</td><td>155.00</td></tr>
+                        <tr><th scope="row">Biscoff</th><td>139.00</td><td>159.00</td></tr>
+                        <tr><th scope="row">Nutella</th><td>139.00</td><td>159.00</td></tr>
+                        <tr><th scope="row">Coco Latte</th><td>129.00</td><td>139.00</td></tr>
+                        <tr><th scope="row">Pumpkin Spice</th><td>129.00</td><td>139.00</td></tr>
+                        <tr><th scope="row">Soda Espresso</th><td>129.00</td><td>139.00</td></tr>
+                        <tr><th scope="row">White Mocha</th><td>129.00</td><td>139.00</td></tr>
+                        <tr><th scope="row">Dark Mocha</th><td>129.00</td><td>139.00</td></tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article class="menu-card" data-category="coffee" aria-labelledby="classic-title">
+                <h2 id="classic-title"><i class="bi bi-cup-straw" aria-hidden="true"></i> Classic Coffee Blends</h2>
+                <img class="menu-photo" src="images/drink (5).jpg" alt="Iced coffee in a jar">
+                <table class="menu-table">
+                    <caption class="menu-sr-only">Classic Coffee Blends prices in Philippine pesos</caption>
+                    <thead>
+                        <tr><th scope="col">Drink</th><th scope="col">16oz</th><th scope="col">22oz</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">Americano</th><td>89.00</td><td>99.00</td></tr>
+                        <tr><th scope="row">Spanish Latte</th><td>118.00</td><td>125.00</td></tr>
+                        <tr><th scope="row">Vietnamese Latte</th><td>118.00</td><td>125.00</td></tr>
+                        <tr><th scope="row">Caramel Macchiato</th><td>118.00</td><td>125.00</td></tr>
+                        <tr><th scope="row">Latte Macchiato</th><td>118.00</td><td>125.00</td></tr>
+                        <tr><th scope="row">Salted Caramel</th><td>118.00</td><td>125.00</td></tr>
+                        <tr><th scope="row">Iced Latte</th><td>99.00</td><td>119.00</td></tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article class="menu-card" data-category="matcha" aria-labelledby="matcha-title">
+                <h2 id="matcha-title"><i class="bi bi-leaf" aria-hidden="true"></i> Matcha Series</h2>
+                <img class="menu-photo" src="images/drink (2).jpg" alt="Iced matcha latte">
+                <table class="menu-table">
+                    <caption class="menu-sr-only">Matcha Series prices in Philippine pesos</caption>
+                    <thead>
+                        <tr><th scope="col">Drink</th><th scope="col">16oz</th><th scope="col">22oz</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">Matcha Latte</th><td>119.00</td><td>129.00</td></tr>
+                        <tr><th scope="row">Coco Matcha</th><td>129.00</td><td>149.00</td></tr>
+                        <tr><th scope="row">Strawberry Matcha</th><td>129.00</td><td>149.00</td></tr>
+                        <tr><th scope="row">Caramel Matcha</th><td>119.00</td><td>149.00</td></tr>
+                        <tr><th scope="row">Biscoff Matcha</th><td>149.00</td><td>169.00</td></tr>
+                        <tr><th scope="row">Dirty Matcha</th><td>149.00</td><td>169.00</td></tr>
+                        <tr><th scope="row">Soda Matcha</th><td>129.00</td><td>139.00</td></tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article class="menu-card" data-category="fruit-tea" aria-labelledby="tea-title">
+                <h2 id="tea-title"><i class="bi bi-brightness-high" aria-hidden="true"></i> Fruit Tea Series</h2>
+                <img class="menu-photo" src="images/drink (4).jpg" alt="Lemon blue ocean iced tea">
+                <table class="menu-table">
+                    <caption class="menu-sr-only">Fruit Tea Series prices in Philippine pesos</caption>
+                    <thead>
+                        <tr><th scope="col">Drink</th><th scope="col">16oz</th><th scope="col">22oz</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">Lychee</th><td>109.00</td><td>129.00</td></tr>
+                        <tr><th scope="row">Passionfruit</th><td>109.00</td><td>129.00</td></tr>
+                        <tr><th scope="row">Strawberry</th><td>109.00</td><td>129.00</td></tr>
+                        <tr><th scope="row">Monta Cubano</th><td>109.00</td><td>129.00</td></tr>
+                        <tr><th scope="row">Lemon Blue Ocean</th><td>119.00</td><td>139.00</td></tr>
+                        <tr><th scope="row">Peppermint</th><td>109.00</td><td>129.00</td></tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article class="menu-card" data-category="milk" aria-labelledby="milk-title">
+                <h2 id="milk-title"><i class="bi bi-heart" aria-hidden="true"></i> Milk Drinks</h2>
+                <img class="menu-photo" src="images/drink (1).jpg" alt="Strawberry milk drink">
+                <table class="menu-table">
+                    <caption class="menu-sr-only">Milk Drinks prices in Philippine pesos</caption>
+                    <thead>
+                        <tr><th scope="col">Drink</th><th scope="col">16oz</th><th scope="col">22oz</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">Strawberry</th><td>119.00</td><td>129.00</td></tr>
+                        <tr><th scope="row">Biscoff</th><td>119.00</td><td>129.00</td></tr>
+                        <tr><th scope="row">Nutella</th><td>119.00</td><td>129.00</td></tr>
+                        <tr><th scope="row">Dark Chocolate</th><td>109.00</td><td>109.00</td></tr>
+                        <tr><th scope="row">White Chocolate</th><td>99.00</td><td>109.00</td></tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <p class="menu-price-note">All prices are in Philippine pesos (₱).</p>
+
+        <!-- Extras Section -->
+        <section class="menu-extras" aria-label="Milk substitutes, add-ons, and extras">
+            <div><h3><i class="bi bi-droplet" aria-hidden="true"></i> Milk Substitutes</h3><p>Almond milk <b>+15.00</b></p><p>Oat milk <b>+20.00</b></p></div>
+            <div><h3><i class="bi bi-plus-circle" aria-hidden="true"></i> Add-ons</h3><p>Biscoff biscuit <b>25.00</b></p><p>Ginger <b>20.00</b></p></div>
+            <div><h3><i class="bi bi-bag" aria-hidden="true"></i> More Choices</h3><p>Extra shot <b>15.00</b></p><p>Takeout box <b>25.00</b></p></div>
+        </section>
+
+        <!-- Inquiry Call to Action -->
+        <section class="menu-cta" aria-labelledby="menu-cta-title">
+            <div>
+                <h2 id="menu-cta-title">Questions about our menu?</h2>
+                <p>Ask us about drinks, add-ons, reservations, or private events.</p>
+            </div>
+            <a class="menu-cta-button" href="contact.html"><i class="bi bi-chat-dots" aria-hidden="true"></i> Contact Us</a>
         </section>
     </main>
 
@@ -184,6 +230,9 @@
         </div>
     </footer>
 
+
+    <!-- External JavaScript for Menu Filters -->
+    <script src="js/menu.js" defer></script>
 </body>
 
 </html>
